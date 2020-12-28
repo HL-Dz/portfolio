@@ -1,0 +1,44 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-size: auto;
+  font-size: 1.6rem;
+  font-family: 'Roboto', sans-serif;
+  @extend %custom-scroll;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  li {
+    list-style: none;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: normal;
+}
