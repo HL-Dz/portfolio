@@ -16,9 +16,13 @@
 }
 
 @mixin media-mobile {
-  @media (max-width: $mobile-big-width)  {@content; };
+  @media (max-width: $mobile-big-width) {@content; };
 }
 
-@mixin media-mobilesmall {
+@mixin media-mobile-landscape {
+  @media screen and (orientation: landscape){@content;};
+}
+
+@mixin media-mobile-small {
   @media (max-width: $mobile-small-width) { @content; };
 }
