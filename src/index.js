@@ -1,15 +1,18 @@
 import './sass/main.scss';
 
 
-const btn = document.querySelector('.show');
-btn.onclick = () => {
+document.querySelector('.button-on').addEventListener('click', () => {
+  let wrapBtn = document.querySelector('.wrap-btn');
   let technologies = document.querySelector('.technologies');
-  technologies.classList.add('technologies_close');
+  wrapBtn.classList.toggle('wrap-btn_active');
+   setTimeout(() => {
+    technologies.classList.add('technologies_close');
+   }, 600);
   setTimeout(() => {
     document.querySelector('.info').classList.add('info_inactive');
-  }, 1000);
+  }, 1300);
   setTimeout(() => {
     document.querySelector('.block-top').classList.add('block-top_active');
     document.querySelector('.block-bottom').classList.add('block-bottom_active');
-  }, 2000);
-}
+  }, 2200);
+})
