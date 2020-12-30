@@ -55,14 +55,13 @@
 .info__symbols {
   position: relative;
   color: #01c9bd;
-  margin-right: 20px;
+  margin-right: 30px;
   display: flex;
   font-size: 7rem;
   letter-spacing: -0.5rem;
   
   @include media-tablet {
     font-size: 5rem;
-    margin-right: 30px;
   }
 
   @include media-mobile {
@@ -92,6 +91,7 @@
 
 .symb-upper {
   margin-top: 25px;
+  margin-left: 5px;
 }
 
 .info__desc {
@@ -111,6 +111,7 @@
   margin-bottom: 10px;
   font-weight: bold;
   font-size: 1.8rem;
+  max-width: 240px;
 
   @include media-tablet {
     font-size: 1.5rem;
@@ -128,6 +129,7 @@
   display: inline-block;
   letter-spacing: 1px;
   font-size: 1.6rem;
+  max-width: 240px;
 
   @include media-tablet {
     font-size: 1.3rem;
@@ -184,7 +186,7 @@
   border: 1px solid #28292b;
   z-index: 1;
   border-radius: 50%;
-  animation: rotation 80s linear infinite;
+  animation: rotation 60s linear infinite;
 
   @include media-tablet {
     width: 480px;
@@ -218,7 +220,7 @@
   border-radius: 50%;
   background: transparent;
   transition: all 0.5s ease;
-  animation: rotation-out 80s linear infinite;
+  animation: rotation-out 60s linear infinite;
   opacity: 0.3;
 
   @include media-tablet {
