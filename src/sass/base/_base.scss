@@ -6,7 +6,7 @@ body {
   min-height: 100%;
   margin: 0;
   padding: 0;
-  background-size: auto;
+  background: #121314;
   font-size: 1.6rem;
   font-family: 'Roboto', sans-serif;
   @extend %custom-scroll;
@@ -48,4 +48,5 @@ h6 {
   width: 100%;
   min-height: 100%;
   height: 100%;
+  z-index: 2;
 }

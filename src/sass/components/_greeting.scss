@@ -8,7 +8,7 @@
 
 .block-top {
   top: 0;
-  transition: top 1.2s ease-out;
+  transition: top 1s ease;
 
   &_active {
     top: -50%;
@@ -17,7 +17,7 @@
 
 .block-bottom {
   bottom: 0;
-  transition: bottom 1.2s ease-out;
+  transition: bottom 1s ease;
 
   &_active {
     bottom: -50%;
