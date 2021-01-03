@@ -1,25 +1,23 @@
+import renderPortfolio from './portfolio/portfolio.js';
+import renderAbout from './about/about.js';
+import renderContact from './contact/contact.js';
+
 const locationResolver = (selector, location) => {
   switch(location) {
     case '#/about/':
-      selector.innerHTML = `
-        <h1 class="about">About</h1>
-        <p class="about__text">This is a page about me!</p>
-      `
-      document.title = 'About';
+      const aboutContent = renderAbout();
+      selector.innerHTML = aboutContent;
+      document.title = 'Обо мне';
       break;
     case '#/portfolio/':
-      selector.innerHTML = `
-        <h1 class="about">Portfolio</h1>
-        <p class="about__text">This is a portfolio page</p>
-      `
-      document.title = 'Portfolio';
+      const portfolioContent = renderPortfolio();
+      selector.innerHTML = portfolioContent;
+      document.title = 'Портфолио';
       break;
     case '#/contact/':
-      selector.innerHTML = `
-        <h1 class="about">Contact</h1>
-        <p class="about__text">This is a contact page</p>
-      `
-      document.title = 'Contact';
+      const contactContent = renderContact();
+      selector.innerHTML = contactContent;
+      document.title = 'Контакты';
       break;
   }
 };

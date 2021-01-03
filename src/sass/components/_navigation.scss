@@ -4,7 +4,9 @@
   bottom: 0;
   left: 0;
   width: 200px;
-  background: #252525;
+  background: #1a1b1d;
+  border-top-right-radius: 10px;
+  background: transparent;
 }
 
 .burger {
@@ -62,7 +64,7 @@
   align-items: center;
   justify-content: flex-end;
   color: rgb(228, 222, 222);
-  font-size: 2rem;
+  font-size: 2.1rem;
   padding: 15px 20px 15px 0;
   @extend %transition;
 
@@ -72,13 +74,11 @@
 }
 
 .nav__text {
-  text-transform: uppercase;
-  letter-spacing: 3px;
+  letter-spacing: 1.2px;
   margin-right: 10px;
-  font-family: 'Ubuntu', sans-serif;
 }
 
 .nav__icon {
   font-size: 1.5rem;
-  color: #0ab67d;
+  color: #2bd19a;
 }

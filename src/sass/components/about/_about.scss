@@ -1,0 +1,17 @@
+.about {
+  min-height: 100vh;
+  max-width: 100%;
+  position: relative;
+}
+
+.about__img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url('./img/forest-1.jpg');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  background-color: transparent;
+  opacity: 0.9;
+}
