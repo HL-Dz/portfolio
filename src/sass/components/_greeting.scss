@@ -29,6 +29,7 @@
   display: flex;
   align-items: center;
   color: rgb(218, 214, 214);
+  font-family: 'Uni Ital', sans-serif;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -127,7 +128,7 @@
   text-transform: uppercase;
   position: relative;
   display: inline-block;
-  letter-spacing: 1px;
+  letter-spacing: 3px;
   font-size: 1.6rem;
   max-width: 240px;
 
@@ -137,6 +138,7 @@
 
   @include media-mobile {
     margin-bottom: 20px;
+    letter-spacing: 1px;
   }
 
 

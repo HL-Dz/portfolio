@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'Uni Ital';
+  src: url('./fonts/Uni/unineue-heavyitalic-webfont.woff2') format('woff2'),
+       url('./fonts/Uni/unineue-heavyitalic-webfont.woff') format('woff'),
+       url('./fonts/Uni/unineue-heavyitalic-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Guerrilla';
+  src: url('./fonts/Guerrilla/guerrilla-normal-webfont.eot');
+  src: url('./fonts/Guerrilla/guerrilla-normal-webfont.eot?#iefix') format('embedded-opentype'),
+       url('./fonts/Guerrilla/guerrilla-normal-webfont.woff2') format('woff2'),
+       url('./fonts/Guerrilla/guerrilla-normal-webfont.woff') format('woff'),
+       url('./fonts/Guerrilla/guerrilla-normal-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Phenomena';
+  src: url('./fonts/Phenomena/phenomena-regular-webfont.eot');
+  src: url('./fonts/Phenomena/phenomena-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('./fonts/Phenomena/phenomena-regular-webfont.woff2') format('woff2'),
+       url('./fonts/Phenomena/phenomena-regular-webfont.woff') format('woff'),
+       url('./fonts/Phenomena/phenomena-regular-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

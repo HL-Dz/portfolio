@@ -1,7 +1,6 @@
 // Normalize
 @import "./base/normalize";
 
-
 // Abstracts
 @import "./abstracts/constants";
 @import "./abstracts/mixins";
@@ -9,8 +8,8 @@
 
 
 // Base
+@import "./base/fonts";
 @import "./base/base";
-
 
 // Layouts
 @import './layouts/container';

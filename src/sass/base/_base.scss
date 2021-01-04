@@ -10,7 +10,7 @@ body {
   padding: 0;
   background: #121314;
   font-size: 1.6rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Phenomena', sans-serif;
   @extend %custom-scroll;
 }
 
@@ -44,6 +44,11 @@ h6 {
   margin: 0;
   font-weight: normal;
   color: #e4dede;
+}
+
+h1 {
+  font-size: 6rem;
+  font-weight: bold;
 }
 
 .wrapper-greet {
