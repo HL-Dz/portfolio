@@ -1,24 +1,18 @@
 const generateLoader = () => {
   let template = `
-  <div class="lds-spinner">
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-  </div>`;
+    <div class="loader">
+      <div class="dash uno"></div>
+      <div class="dash dos"></div>
+      <div class="dash tres"></div>
+      <div class="dash cuatro"></div>
+    </div>
+  `;
+
   const loader = document.createElement('div');
-  loader.classList.add('content-loader');
+  loader.classList.add('container-loader');
   loader.innerHTML = template;
   return loader;
-};
+}
 
 export default generateLoader;
 

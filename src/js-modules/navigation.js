@@ -78,7 +78,7 @@ export default class Navigation {
         locationResolver(this.$app, this.currentHref);
         this.$app.classList.remove('app_inactive');
         pageLoader.remove();
-      }, 1200);
+      }, 3300);
     }
   }
 }
