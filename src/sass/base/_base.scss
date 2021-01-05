@@ -6,6 +6,7 @@ body {
   min-height: 100%;
   width: 100%;
   height: 100%;
+  color: #fff;
   margin: 0;
   padding: 0;
   background: #121314;
@@ -46,11 +47,6 @@ h6 {
   color: #e4dede;
 }
 
-h1 {
-  font-size: 6rem;
-  font-weight: bold;
-}
-
 .wrapper-greet {
   position: fixed;
   width: 100%;
@@ -61,9 +57,11 @@ h1 {
 
 .container-block {
   @extend %content-padding;
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
+  max-width: 1300px;
   width: 100%;
   height: 100%;
+  margin: 0 auto;
 }

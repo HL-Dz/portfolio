@@ -17,4 +17,18 @@
 
 %content-padding {
   padding: 15px;
+  padding-top: 70px;
+}
+
+%title-dir {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  top: 0px;
+  font-size: 5rem;
+  font-weight: bold;
+  letter-spacing: 4px;
+  padding: 0 10px;
+  padding-bottom: 5px;
 }

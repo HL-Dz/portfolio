@@ -15,4 +15,14 @@
   background-size: cover;
   background-color: transparent;
   opacity: 0.9;
+  transition: opacity 0.5s ease;
+
+  &_active {
+    opacity: 0;
+  }
+}
+
+
+.portfolio__title {
+  @extend %title-dir;
 }
