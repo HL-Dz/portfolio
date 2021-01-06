@@ -7,11 +7,11 @@ import Navigation from './js-modules/navigation.js';
 
 const app = document.querySelector('#app');
 
-const greeting = new Greeting({
-  data: technologies,
-  fullname: 'Dzmitry Hlushak',
-  profession: 'Frontend developer'
-});
+// const greeting = new Greeting({
+//   data: technologies,
+//   fullname: 'Dzmitry Hlushak',
+//   profession: 'Frontend developer'
+// });
 
 
 window.addEventListener('load', () => {
