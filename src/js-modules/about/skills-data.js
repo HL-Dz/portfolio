@@ -33,18 +33,26 @@ let skillsData = [
     imgUrl: './img/git.png'
   },
   {
-    id: 7,
+    id: 6,
     title: 'GULP',
     description: `Если с webpack-ом не прокатит, то на краняк
     можно Gulp-ом прихорошить проект.`,
     imgUrl: './img/gulp.png'
   },
   {
-    id: 8,
+    id: 7,
     title: 'SASS',
     description: `CSS - это конечно хорошо, но жизнь невозможна
     без миксинов, плейсхолдеров и прочих радостей жизни.`,
     imgUrl: './img/sass.png'
+  },
+  {
+    id: 8,
+    title: 'Photoshop',
+    description: `Не дизайнер, но базовую нарезочку (колбаски?)
+    изображений смогу сделать. 
+    `,
+    imgUrl: './img/photoshop.png'
   },
 ];
 

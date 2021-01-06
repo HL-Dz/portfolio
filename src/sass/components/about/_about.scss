@@ -74,50 +74,57 @@
     .skill-container {
       &:nth-child(1) {
         .skill__pic {
-          animation: big-size 1.5s ease infinite;
+          animation: big-size 1.9s ease infinite;
           animation-delay: 0.1s;
         }
       }
     
       &:nth-child(2) {
         .skill__pic {
-          animation: big-size 1.3s ease infinite;
+          animation: big-size 1.7s ease infinite;
           animation-delay: 0.3s;
         }
       }
     
       &:nth-child(3) {
         .skill__pic {
-          animation: big-size 1.1s ease infinite;
+          animation: big-size 1.5s ease infinite;
           animation-delay: 0.5s;
         }
       }
     
       &:nth-child(4) {
         .skill__pic {
-          animation: big-size 0.9s ease infinite;
+          animation: big-size 1.3s ease infinite;
           animation-delay: 0.7s;
         }
       }
     
       &:nth-child(5) {
         .skill__pic {
-          animation: big-size 0.7s ease infinite;
+          animation: big-size 1.1s ease infinite;
           animation-delay: 0.9s;
         }
       }
     
       &:nth-child(6) {
         .skill__pic {
-          animation: big-size 0.5s ease infinite;
+          animation: big-size 0.9s ease infinite;
           animation-delay: 1.1s;
         }
       }
     
       &:nth-child(7) {
         .skill__pic {
-          animation: big-size 0.3s ease infinite;
+          animation: big-size 0.7s ease infinite;
           animation-delay: 1.3s;
+        }
+      }
+      
+      &:nth-child(8) {
+        .skill__pic {
+          animation: big-size 0.5s ease infinite;
+          animation-delay: 1.5s;
         }
       }
     }
@@ -204,6 +211,8 @@
 .skill__title {
   font-size: 3rem;
   display: inline-block;
+  color: #fff;
+  color: #ced2d2;
   margin-bottom: 5px;
   border-bottom: 3px solid #2bd19a;
 }
@@ -218,15 +227,18 @@
   0% {
     width: 70px;
     height: 70px;
+    box-shadow: 0 0 0px rgba(255, 255, 255, 0.5);
   }
   50% {
     width: 120px;
     height: 120px;
     z-index: 3;
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.5);
   }
   100% {
     width: 70px;
     height: 70px;
     z-index: 2;
+    box-shadow: 0 0 0px rgba(255, 255, 255, 0.5);
   }
 }

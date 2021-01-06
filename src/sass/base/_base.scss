@@ -13,6 +13,7 @@ body {
   font-size: 1.6rem;
   font-family: 'Phenomena', sans-serif;
   @extend %custom-scroll;
+  z-index: -1;
 }
 
 * {

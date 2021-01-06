@@ -1,100 +1,32 @@
+import skillsData from './skills-data.js';
+
+const getSkill = (el) => {
+  return `
+  <div class="skill-container">
+    <div class="skill__pic">
+      <img class="skill__img" src="${el.imgUrl}" alt="${el.title}"/>
+    </div>
+    <div class="skill">
+      <div class="skill__title">${el.title}</div>
+      <div class="skill__description">${el.description}</div>
+    </div>
+</div>
+  `
+}
+
+
 const renderAbout = () => {
+
+  const skills = skillsData.map(skill => {
+    return getSkill(skill);
+  })
+  
   return `
     <div class="about">
       <div class="about__img"></div>
       <div class="container-block">
         <h1 class="about__title">Обо мне</h1>
-        <div class="skills">
-
-          <div class="skill-container">
-            <div class="skill__pic">
-              <img class="skill__img" src="./img/css.png" alt="CSS"/>
-            </div>
-            <div class="skill">
-              <div class="skill__title">CSS</div>
-              <div class="skill__description">
-                Смогу санимировать в пределах разумного все, что
-                не анимируется.
-              </div>
-            </div>
-          </div>
-
-          <div class="skill-container">
-            <div class="skill__pic">
-              <img class="skill__img" src="./img/html.png" alt="HTML5"/>
-            </div>
-            <div class="skill">
-              <div class="skill__title">HTML5</div>
-              <div class="skill__description">
-                Добрый HTML не оставит равнодушным никого.
-              </div>
-            </div>
-          </div>
-
-          <div class="skill-container">
-            <div class="skill__pic">
-              <img class="skill__img" src="./img/js.png" alt="JavaScript"/>
-            </div>
-            <div class="skill">
-              <div class="skill__title">JavaScript</div>
-              <div class="skill__description">
-                Динамика будет очень даже хороша!
-              </div>
-            </div>
-          </div>
-
-          <div class="skill-container">
-            <div class="skill__pic">
-              <img class="skill__img" src="./img/webpack.png" alt="Webpack"/>
-            </div>
-            <div class="skill">
-              <div class="skill__title">Webpack</div>
-              <div class="skill__description">
-                Соберу с помощью сборки все то, что не
-                собирается!
-              </div>
-            </div>
-          </div>
-
-          <div class="skill-container">
-            <div class="skill__pic">
-              <img class="skill__img" src="./img/git.png" alt="Git"/>
-            </div>
-            <div class="skill">
-              <div class="skill__title">GIT</div>
-              <div class="skill__description">
-                Ну а кто же будет сохранять все версии!
-                Без этого никак!
-              </div>
-            </div>
-          </div>
-
-          <div class="skill-container">
-            <div class="skill__pic">
-              <img class="skill__img" src="./img/sass.png" alt="Sass"/>
-            </div>
-            <div class="skill">
-              <div class="skill__title">SASS</div>
-              <div class="skill__description">
-                CSS - это конечно хорошо, но жизнь невозможна
-                без миксинов, плейсхолдеров и прочих радостей жизни.
-              </div>
-            </div>
-          </div>
-
-          <div class="skill-container">
-            <div class="skill__pic">
-              <img class="skill__img" src="./img/gulp.png" alt="Gulp"/>
-            </div>
-            <div class="skill">
-              <div class="skill__title">GULP</div>
-              <div class="skill__description">
-                Если с webpack-ом не прокатит, то на краняк
-                можно Gulp-ом прихорошить проект.
-              </div>
-            </div>
-          </div>
-        </div>
+        <div class="skills">${skills.join('')}</div>
       </div>
     </div>
   `
