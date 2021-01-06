@@ -13,11 +13,24 @@ const greeting = new Greeting({
   profession: 'Frontend developer'
 });
 
+
 window.addEventListener('load', () => {
   let location = window.location.hash;
   if(location) {
     locationResolver(app, location);
   }
+  
+  setInterval(() => {
+    toggleSkillAnimation();
+  }, 1600);
 });
 
 const nav = new Navigation();
+
+
+function toggleSkillAnimation(){
+  const skills = document.querySelector('.skills');
+  if(skills) {
+    skills.classList.toggle('skills_active');
+  }
+}
