@@ -44,6 +44,7 @@ module.exports = {
   mode: "development",
   entry: {
     index: ["@babel/polyfill", "./index.js"],
+    about: "./about.js",
   },
   output: {
     filename: fileName("js"),

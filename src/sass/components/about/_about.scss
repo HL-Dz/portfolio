@@ -20,44 +20,92 @@
   @extend %title-dir;
 }
 
+.about__info {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+  margin-bottom: 70px;
+  border-radius: 5px;
+  cursor: pointer;
+  background: rgb(18,19,20);
+  opacity: 1;
+  transition: all 1s ease;
 
+  &_inactive {
+    background: transparent;
+    margin-bottom: 70px;
 
+    .about__desc {
+      margin-top: -2000px;
+    }
 
+    .avatar {
+      margin-top: -2000px;
+    }
 
+    .about__arrow {
+      transform: translateX(-50%) rotate(0);    
+    }
 
-// .about__info {
-//   display: flex;
-//   align-items: center;
-//   border-radius: 3px;
-//   justify-content: center;
-//   background: #121314d2;
-// }
+    .about__text {
+      opacity: 1;
+    }
+  }
+}
 
-// .avatar {
-//   width: 200px;
-//   height: 200px;
-//   border-radius: 5px;
-//   overflow: hidden;
-//   flex-shrink: 0;
-// }
+.about__arrow {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) rotate(180deg);
+  font-size: 4rem;
+  bottom: -35px;
+  color: rgba(255, 255, 255, 0.521);
+  animation: pulse-arrow 2s ease infinite;
+  border-radius: 50%;
+  transition: transform 0.5s ease;
+}
 
-// .avatar__img {
-//   max-width: 100%;
-// }
+.about__text {
+  position: absolute;
+  color: rgba(255, 255, 255, 0.863);
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 3rem;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
 
-// .about__desc {
-//   padding: 10px;
-//   letter-spacing: 2px;
-//   color: rgb(165, 165, 172);
-//   font-size: 2rem;
-//   font-weight: bold;
-//   margin-right: 20px;
-//   max-width: 500px;
-// }
+.avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 3px;
+  overflow: hidden;
+  flex-shrink: 0;
+  transition: margin-top 0.5s ease;
+}
+
+.avatar__img {
+  max-width: 100%;
+}
+
+.about__desc {
+  letter-spacing: 1px;
+  color: rgb(185, 177, 177);
+  border-radius: 5px;
+  font-size: 2.2rem;
+  margin-right: 20px;
+  transition: margin-top 0.5s ease;
+}
+
+.warning {
+  font-size: 3rem;
+  color: rgb(184, 85, 85);
+}
 
 .skills {
   position: relative;
-  padding: 15px;
 
   &:after {
     position: absolute;
@@ -174,6 +222,7 @@
   background: rgba(145, 140, 140, 0.15);
   padding: 10px;
   border-radius: 3px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .skill__pic {
@@ -230,8 +279,8 @@
     box-shadow: 0 0 0px rgba(255, 255, 255, 0.5);
   }
   50% {
-    width: 120px;
-    height: 120px;
+    width: 110px;
+    height: 110px;
     z-index: 3;
     box-shadow: 0 0 40px rgba(255, 255, 255, 0.5);
   }
@@ -240,5 +289,18 @@
     height: 70px;
     z-index: 2;
     box-shadow: 0 0 0px rgba(255, 255, 255, 0.5);
+  }
+}
+
+
+@keyframes pulse-arrow {
+  0% {
+    box-shadow: 0 0 0 0px rgba(87, 86, 86, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 0 20px rgba(56, 56, 56, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 20px rgba(56, 56, 56, 0);
   }
 }

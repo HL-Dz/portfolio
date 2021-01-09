@@ -1,5 +1,5 @@
 import renderPortfolio from './portfolio/portfolio.js';
-import renderAbout from './about/about.js';
+import renderAbout from './about/about-content.js';
 import renderContact from './contact/contact.js';
 
 const locationResolver = (selector, location) => {
