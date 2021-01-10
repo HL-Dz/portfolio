@@ -1,4 +1,4 @@
-import renderPortfolio from './portfolio/portfolio.js';
+import renderPortfolio from './portfolio/portfolio-content.js';
 import renderAbout from './about/about-content.js';
 import renderContact from './contact/contact.js';
 

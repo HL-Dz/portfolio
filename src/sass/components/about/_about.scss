@@ -31,7 +31,7 @@
   cursor: pointer;
   background: rgb(18,19,20);
   opacity: 1;
-  transition: all 1s ease;
+  transition: all 0.5s ease;
 
   &_inactive {
     background: transparent;
@@ -60,7 +60,7 @@
   left: 50%;
   transform: translateX(-50%) rotate(180deg);
   font-size: 4rem;
-  bottom: -35px;
+  bottom: -25px;
   color: rgba(255, 255, 255, 0.521);
   animation: pulse-arrow 2s ease infinite;
   border-radius: 50%;
@@ -111,7 +111,7 @@
     position: absolute;
     content: '';
     top: 57px;
-    bottom: 65px;
+    bottom: 100px;
     left: 50%;
     width: 1px;
     background: rgba(255, 255, 255, 0.233);
@@ -223,6 +223,7 @@
   padding: 10px;
   border-radius: 3px;
   border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 1s ease;
 }
 
 .skill__pic {
@@ -268,8 +269,9 @@
 
 .skill__description {
   font-size: 1.7rem;
-  letter-spacing: 1.3px;
+  letter-spacing: 1.4px;
   color: #cfc6c6;
+  transition: transform 0.7s ease;
 }
 
 @keyframes big-size {
