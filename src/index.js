@@ -17,6 +17,35 @@ window.addEventListener('load', () => {
     fullname: 'Dzmitry Hlushak',
     profession: 'Frontend developer'
   });
-
+  
   const nav = new Navigation();
+  
 });
+
+app.addEventListener('click', (e) => {
+  let target = e.target;
+  if(target.closest('[data-elem="info"]')) {
+    toggleDisplayBoutInfo();
+  }
+});
+
+
+/********************************ABOUT SECTION********************************/
+
+// Показать/скрыть информацию 
+const toggleDisplayBoutInfo = () => {
+  const aboutInfo = document.querySelector('.about__info');
+  aboutInfo.classList.toggle('about__info_inactive');
+}
+
+// Анимация для скилов
+const toggleSkillAnimation = () => {
+  const skills = document.querySelector('.skills');
+  skills.classList.toggle('skills_active');
+};
+
+setInterval(() => {
+  toggleSkillAnimation()
+}, 1900);
+
+
