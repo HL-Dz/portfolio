@@ -2,7 +2,7 @@ import { works } from './portfolio-data.js';
 
 const getWork = (el) => {
   return `
-  <div class="box">
+  <div class="box" data-elem="box" data-id="${el.id}">
     <div class="box__inner">
       <div class="box__front">
         <img class="box__img" src="${el.imgPath}" alt="${el.name}">
@@ -15,10 +15,10 @@ const getWork = (el) => {
           Смотреть исходники на Github + Production.
         </div>
         <div class="source">
-          <a class="source__link source__link_code" href="${el.codeLink}" target="_blank" title="Исходники">
+          <a class="source__link source__link_code" href="${el.codeLink}" data-type="link" target="_blank" title="Исходники">
             <i class="fas fa-file-code source-code"></i>
           </a>
-          <a class="source__link source__link_watch" href="${el.prodLink}" target="_blank" title="Production">
+          <a class="source__link source__link_watch" href="${el.prodLink}" data-type="link" target="_blank" title="Production">
             <i class="fas fa-eye source-watch"></i>
           </a>
         </div>

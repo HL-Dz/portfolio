@@ -12,20 +12,24 @@ window.addEventListener('load', () => {
     locationResolver(app, location);
   }
 
-  const greeting = new Greeting({
-    data: technologies,
-    fullname: 'Dzmitry Hlushak',
-    profession: 'Frontend developer'
-  });
+  // const greeting = new Greeting({
+  //   data: technologies,
+  //   fullname: 'Dzmitry Hlushak',
+  //   profession: 'Frontend developer'
+  // });
   
   const nav = new Navigation();
   
 });
 
+// Обработчик на главном элементе app
 app.addEventListener('click', (e) => {
   let target = e.target;
   if(target.closest('[data-elem="info"]')) {
     toggleDisplayBoutInfo();
+  } else if (target.closest('[data-elem="box"]') && !target.closest('[data-type="link"]')) {
+    let elem = target.closest('[data-elem="box"]');
+    rotateWork(elem);
   }
 });
 
@@ -41,7 +45,9 @@ const toggleDisplayBoutInfo = () => {
 // Анимация для скилов
 const toggleSkillAnimation = () => {
   const skills = document.querySelector('.skills');
-  skills.classList.toggle('skills_active');
+  if(skills) {
+    skills.classList.toggle('skills_active');
+  }
 };
 
 setInterval(() => {
@@ -49,3 +55,9 @@ setInterval(() => {
 }, 1900);
 
 
+/********************************PORTFOLIO SECTION********************************/
+
+// 
+const rotateWork = (elem) => {
+  elem.classList.toggle('box_rotate');
+}

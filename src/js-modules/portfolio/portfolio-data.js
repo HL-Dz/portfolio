@@ -35,7 +35,7 @@ export let works = [
     id: 5,
     title: `Базовый шаблон`,
     name: 'Social',
-    imgPath: './img/Social.png',
+    imgPath: './img/social.png',
     codeLink: 'https://github.com/HL-Dz/HL-Dz.github.io/tree/master/work1',
     prodLink: 'https://social-ui-1.netlify.app/'
   },
