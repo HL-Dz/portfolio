@@ -19,6 +19,10 @@
 %content-padding {
   padding: 15px;
   padding-top: 70px;
+
+  @include media-tablet {
+    padding-top: 35px;
+  }
 }
 
 %title-dir {
@@ -52,4 +56,13 @@
   &:after {
     left: 100%;
   }
+
+  @include media-tablet {
+    width: auto;
+    font-size: 3rem;
+
+    &:after, &:before {
+      width: 30px;
+    }
+  }  
 }

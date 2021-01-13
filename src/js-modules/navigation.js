@@ -57,16 +57,21 @@ export default class Navigation {
   }
 
   setup(){
+    this.toggleMenu = this.toggleMenu.bind(this);
     this.goToPath = this.goToPath.bind(this);
     this.$navElem = document.querySelector('.navigation-block');
     this.$app = document.querySelector('#app');
     this.$allLinks = document.querySelectorAll('.nav__link');
+    this.$burger = document.querySelector('#burger');
     this.$navElem.addEventListener('click', this.goToPath);
+    this.$burger.addEventListener('click', this.toggleMenu);
   }
 
   goToPath(e){
     let target = e.target.closest('[data-type="route-btn"]');
     if(target) {
+      this.$navElem.classList.remove('navigation-block_active');
+      this.$burger.classList.toggle('burger_close');
       this.currentHref = target.dataset.href;
       document.body.append(pageLoader);
       this.$app.classList.add('app_inactive');
@@ -80,5 +85,10 @@ export default class Navigation {
         pageLoader.remove();
       }, 3300);
     }
+  }
+
+  toggleMenu(){
+    this.$burger.classList.toggle('burger_close');
+    this.$navElem.classList.toggle('navigation-block_active');
   }
 }

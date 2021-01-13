@@ -8,6 +8,10 @@
   &_inactive {
     opacity: 0;
   }
+
+  @include media-tablet-middle {
+    padding: 0;
+  }
 }
 
 .main-title {
