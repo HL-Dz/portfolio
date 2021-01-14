@@ -71,7 +71,7 @@ export default class Navigation {
     let target = e.target.closest('[data-type="route-btn"]');
     if(target) {
       this.$navElem.classList.remove('navigation-block_active');
-      this.$burger.classList.toggle('burger_close');
+      this.$burger.classList.remove('burger_close');
       this.currentHref = target.dataset.href;
       document.body.append(pageLoader);
       this.$app.classList.add('app_inactive');

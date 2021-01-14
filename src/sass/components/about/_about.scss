@@ -122,9 +122,31 @@
   }
 }
 
+.weights,
+.warning,
+.forest,
+.coffee-time,
+.hands,
+.chair
+{
+  font-size: 2.5rem;
+}
+
+.chair {
+  color: rgb(157, 157, 202);
+}
+
+.forest {
+  color: rgb(68, 161, 92);
+  font-size: 2.5rem;
+}
+
 .warning {
-  font-size: 3rem;
   color: rgb(184, 85, 85);
+}
+
+.coffee-time {
+  color: rgb(190, 164, 90);
 }
 
 .skills {
