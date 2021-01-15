@@ -39,7 +39,7 @@ const renderAbout = () => {
             может пошатнуться ).
           </div>
           <div class="avatar">
-            <img class="avatar__img" src="./img/ava.jpg" alt="Avatar"/>
+            <img class="avatar__img" src="./img/photo.jpg" alt="Avatar"/>
           </div>
         </div>
         <div class="skills">${skills.join('')}</div>
