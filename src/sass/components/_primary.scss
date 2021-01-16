@@ -1,18 +1,24 @@
 .primary {
   width: 100%;
-  height: 100%;
+  min-height: 100%;
   position: relative;
-  background-image: url('./img/network.png');
-  background-position: center center;
+  background-image: url('./img/bg.png');
+  background-position: top center;
   background-repeat: no-repeat;
-  background-size: contain;
+  overflow-y: hidden;
+
+  @include media-tablet {
+    background-position: center center;
+    background-size: contain;
+    overflow-y: auto;
+  }  
 }
 
 .primary__info {
   display: flex;
   justify-content: space-between;
-  max-width: 1300px;
-  height: 100%;
+  max-width: 1150px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -21,33 +27,91 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  background: #12131485;
+  background: rgb(18,19,20);
+  background: linear-gradient(105deg, rgba(18,19,20,1) 15%, rgba(49, 102, 98, 0.3) 70%, rgba(0,0,0,1) 95%);
+
+  @include media-tablet {
+    background: linear-gradient(105deg, rgba(18,19,20,1) 5%, rgba(49, 102, 98, 0.3) 70%, rgba(0,0,0,1) 99%);
+  }
 }
 
 
 .primary__title {
-  font-size: 4rem;
-  display: inline-block;
+  font-size: 5rem;
+  display: inline-flex;
   margin-bottom: 20px;
+  margin-top: 200px;
+  padding: 5px 20px;
   font-weight: bold;
-  color: rgb(196, 193, 193);
-  border-bottom: 2px solid #2bd19a;
+  color: rgb(231, 231, 230);
+  border-radius: 5px;
+
+  @include media-tablet {
+    color: rgb(216, 218, 217);
+    position: relative;
+    margin-top: 0;
+    font-size: 3rem;
+    margin-top: 170px;
+
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 150px;
+      height: 150px;
+      background-image: url('./img/avatar-mobile.jpg');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      border-radius: 50%;
+      box-shadow: 0 0 30px rgb(214, 211, 211);
+    }
+  }
 }
 
 .primary__text {
+  position: relative;
   font-size: 2.7rem;
   text-align: center;
+  letter-spacing: 1.5px;
   color: rgb(196, 193, 193);
   max-width: 550px;
+  padding: 5px;
+  border-radius: 7px;
+  background: rgba(3, 27, 24, 0.5);
+
+  &:after {
+   content: '';
+   position: absolute;
+   bottom: 100%;
+   right: 20px;
+   border: 20px solid transparent;
+   border-bottom: 20px solid rgba(3, 27, 24, 0.5);
+  }
+
+  @include media-tablet  {
+    font-size: 2rem;
+    font-weight: bold;
+
+    &:after {
+      right: 50%;
+      transform: translateX(50%);
+    }
+  }
 }
 
 .primary__pic {
   align-self: center;
+
+  @include media-tablet {
+    display: none;
+  }
 }
 
 .primary__img {

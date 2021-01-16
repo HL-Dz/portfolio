@@ -4,9 +4,10 @@ import locationResolver from './locationResolver.js';
 let pageLoader = loader();
 
 let navData = [
-  {id: 1, path: '#/about/', title: 'Обо мне', icon: 'fa-address-card'},
-  {id: 2, path: '#/portfolio/', title: 'Портфолио', icon: 'fa-tv'},
-  {id: 3, path: '#/contact/', title: 'Контакты', icon: 'fa-address-book'},
+  {id: 1, path: '#/', title: 'Главная', icon: 'fa-home'},
+  {id: 2, path: '#/about/', title: 'Обо мне', icon: 'fa-address-card'},
+  {id: 3, path: '#/portfolio/', title: 'Портфолио', icon: 'fa-tv'},
+  {id: 4, path: '#/contact/', title: 'Контакты', icon: 'fa-address-book'},
 ];
 
 const getNavigationTemplate = (path) => {

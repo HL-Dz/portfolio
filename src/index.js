@@ -6,20 +6,20 @@ import Navigation from './js-modules/navigation.js';
 
 const app = document.querySelector('#app');
 
+
+const greeting = new Greeting({
+  data: technologies,
+  fullname: 'Dzmitry Hlushak',
+  profession: 'Frontend developer'
+});
+
+const nav = new Navigation();
+
 window.addEventListener('load', () => {
   let location = window.location.hash;
   if(location) {
     locationResolver(app, location);
   }
-
-  // const greeting = new Greeting({
-  //   data: technologies,
-  //   fullname: 'Dzmitry Hlushak',
-  //   profession: 'Frontend developer'
-  // });
-  
-  const nav = new Navigation();
-  
 });
 
 // Обработчик на главном элементе app

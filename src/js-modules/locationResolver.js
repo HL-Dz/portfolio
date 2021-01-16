@@ -1,9 +1,15 @@
+import renderMain from './main/main-content.js';
 import renderPortfolio from './portfolio/portfolio-content.js';
 import renderAbout from './about/about-content.js';
 import renderContact from './contact/contact.js';
 
 const locationResolver = (selector, location) => {
   switch(location) {
+    case '#/':
+      const mainContent = renderMain();
+      selector.innerHTML = mainContent;
+      document.title = 'Главная';
+      break;
     case '#/about/':
       const aboutContent = renderAbout();
       selector.innerHTML = aboutContent;
