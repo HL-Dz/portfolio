@@ -26,7 +26,7 @@ window.addEventListener('load', () => {
 app.addEventListener('click', (e) => {
   let target = e.target;
   if(target.closest('[data-elem="info"]')) {
-    toggleDisplayBoutInfo();
+    toggleDisplayInfo();
   } else if (target.closest('[data-elem="box"]') && !target.closest('[data-type="link"]')) {
     let elem = target.closest('[data-elem="box"]');
     rotateWork(elem);
@@ -37,7 +37,7 @@ app.addEventListener('click', (e) => {
 /********************************ABOUT SECTION********************************/
 
 // Показать/скрыть информацию 
-const toggleDisplayBoutInfo = () => {
+const toggleDisplayInfo = () => {
   const aboutInfo = document.querySelector('.about__info');
   aboutInfo.classList.toggle('about__info_inactive');
 }

@@ -117,8 +117,12 @@
   transition: all 0.5s ease;
 
   @include media-tablet {
+    padding: 5px 20px;
+    // border: 1px solid rgba(128, 128, 128, 0.26);
+    border-radius: 2px;
     font-size: 1.8rem;
-    text-align: center;
+    // text-align: center;
+    text-align: justify;
   }
 }
 
