@@ -22,7 +22,7 @@ const renderAbout = () => {
   })
   
   return `
-    <div class="about">
+    <section class="about">
       <div class="about__img"></div>
       <div class="container-block">
         <h1 class="about__title">Обо мне</h1>
@@ -44,7 +44,7 @@ const renderAbout = () => {
         </div>
         <div class="skills">${skills.join('')}</div>
       </div>
-    </div>
+    </ы>
   `
 };
 

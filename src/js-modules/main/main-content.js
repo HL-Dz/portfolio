@@ -1,6 +1,6 @@
 const renderMain = () => {
   return `
-  <div class="primary">
+  <section class="primary">
     <div class="primary__info">
       <div class="primary__desc">
         <div class="primary__overlay">
@@ -15,7 +15,7 @@ const renderMain = () => {
         <img src="./img/ava.png" alt="Main" class="primary__img">
       </div>
     </div>
-  </div>
+  </section>
   `;
 };
 
