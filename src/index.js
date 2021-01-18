@@ -30,6 +30,10 @@ app.addEventListener('click', (e) => {
   } else if (target.closest('[data-elem="box"]') && !target.closest('[data-type="link"]')) {
     let elem = target.closest('[data-elem="box"]');
     rotateWork(elem);
+  } else if (target.closest('[data-type="title-el"]')) {
+    toggleContactLinks(target);
+  } else if (target.dataset.close === 'contact') {
+    toggleContactLinks(target);
   }
 });
 
@@ -57,7 +61,16 @@ setInterval(() => {
 
 /********************************PORTFOLIO SECTION********************************/
 
-// 
+// Показать ссылки на одну из работ
 const rotateWork = (elem) => {
   elem.classList.toggle('box_rotate');
+}
+
+
+/********************************CONTACT SECTION********************************/
+
+// Показать/скрыть ссылки для связи
+const toggleContactLinks = (target) =>  {
+  let communication = target.closest('.communication');
+  communication.classList.toggle('communication_active');
 }

@@ -1,7 +1,7 @@
 import renderMain from './main/main-content.js';
 import renderPortfolio from './portfolio/portfolio-content.js';
 import renderAbout from './about/about-content.js';
-import renderContact from './contact/contact.js';
+import renderContact from './contact/contact-content.js';
 
 const locationResolver = (selector, location) => {
   switch(location) {

@@ -1,10 +1,166 @@
+.center-block {
+  height: 100vh;
+}
+
 .contact {
   min-height: 100vh;
   max-width: 100%;
   position: relative;
+  background: rgb(18,19,20);
+  background: linear-gradient(140deg, rgba(18,19,20,1) 50%, rgba(49, 102, 98, 0.2) 51%, rgba(0,0,0,1) 90%);
 }
-
 
 .contact__title {
   @extend %title-dir;
+}
+
+.communications {
+  position: relative;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.communication {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 800px;
+  width: 80%;
+  color: rgb(194, 197, 196);
+  border-bottom: 1px solid rgba(128, 128, 128, 0.39);
+  overflow: hidden;
+
+  &_active {
+    .communication__title {
+      top: 100%;
+    }
+
+    .path {
+      bottom: 0;
+    }
+  }
+
+  @include media-tablet {
+    width: 95%;
+    height: 80px;
+  }
+}
+
+.communication__block {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.communication__title {
+  position: absolute;
+  font-size: 7rem;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  line-height: 98px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+
+  &:hover {
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.774);
+  }
+
+  @include media-tablet {
+    line-height: 80px;
+    font-size: 6rem;
+  }
+
+  @include media-mobile {
+    font-size: 4rem;
+  }
+}
+
+.path {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 100%;
+  transition: all 0.5s ease;
+}
+
+.path__link {
+  font-size: 5rem;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  color: rgb(192, 190, 190);
+  height: 100%;
+  line-height: 100px;
+  transition: all 0.5s ease;
+  border-radius: 5px;
+
+  &:hover  {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3) inset;
+  }
+
+  @include media-tablet  {
+    line-height: 80px;
+  }
+
+  @include media-mobile {
+    font-size: 3.5rem;
+    width: 70%;
+  }
+}
+
+
+.path__close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+
+  @include media-tablet {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.path__icon {
+  font-size: 5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  &:hover {
+    text-shadow: 0 0 20px #fff;
+  }
+}
+
+.communication__pic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  padding: 3px;
+  transition: all 0.5s ease;
+
+  @include media-tablet {
+    width: 80px;
+    height: 80px;
+  }
+
+  @include media-mobile {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.communication__img {
+  max-width: 100%;
 }
