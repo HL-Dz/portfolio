@@ -89,6 +89,23 @@
   }
 }
 
+.btn-cancel {
+  // background: #000;
+  position: relative;
+  background: transparent;
+  outline: none;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 5px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  @extend %transition;
+
+  &:hover {
+    animation: close-btn 1.3s ease infinite;
+  }
+}
+
 @keyframes pulse-btn {
   0% {
     box-shadow: 0 0 0 0px rgba(87, 86, 86, 0.5);
@@ -98,5 +115,17 @@
   }
   100% {
     box-shadow: 0 0 0 50px rgba(56, 56, 56, 0);
+  }
+}
+
+@keyframes close-btn {
+  0% {
+    box-shadow: 0 0 0 0px rgba(87, 86, 86, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 0 100px rgba(56, 56, 56, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 100px rgba(56, 56, 56, 0);
   }
 }

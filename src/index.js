@@ -7,11 +7,11 @@ import Navigation from './js-modules/navigation.js';
 const app = document.querySelector('#app');
 
 
-const greeting = new Greeting({
-  data: technologies,
-  fullname: 'Dzmitry Hlushak',
-  profession: 'Frontend developer'
-});
+// const greeting = new Greeting({
+//   data: technologies,
+//   fullname: 'Dzmitry Hlushak',
+//   profession: 'Frontend developer'
+// });
 
 const nav = new Navigation();
 
@@ -27,13 +27,15 @@ app.addEventListener('click', (e) => {
   let target = e.target;
   if(target.closest('[data-elem="info"]')) {
     toggleDisplayInfo();
-  } else if (target.closest('[data-elem="box"]') && !target.closest('[data-type="link"]')) {
+  } else if (target.closest('[data-elem="box"]') && !target.closest('[data-type="link"]') & !target.closest('[data-info="help"]')) {
     let elem = target.closest('[data-elem="box"]');
     rotateWork(elem);
   } else if (target.closest('[data-type="title-el"]')) {
     toggleContactLinks(target);
   } else if (target.dataset.close === 'contact') {
     toggleContactLinks(target);
+  } else if (target.closest('[data-info="help"]')) {
+    console.log('Click help');
   }
 });
 

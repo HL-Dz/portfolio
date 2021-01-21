@@ -103,21 +103,51 @@
   background: rgba(0, 0, 0, 0.3);
 }
 
-
 .box__text {
   position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   font-size: 2.3rem;
   width: 100%;
+  top: 0;
   font-weight: bold;
   color: rgba(255, 255, 255, 0.8);
-  text-align: center;
   background: rgba(0, 0, 0, 0.3);
-  padding: 20px;
   border-radius: 5px 5px 0 0;
 
   @include media-tablet {
     font-size: 1.8rem;
   }
+}
+
+.box__caption {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.box__help {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: rgba(16, 20, 17, 0.205);
+  border-radius: 0 0 0 10px;
+  @extend %transition;
+
+  &:hover {
+    .box__icon {
+      color: rgb(159, 216, 159);
+      transform: rotateY(360deg);
+    }
+  }
+}
+
+.box__icon {
+  font-size: 3rem;
+  color: rgb(209, 209, 209);
+  @extend %transition;
 }
 
 .box__back {

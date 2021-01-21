@@ -7,7 +7,12 @@ const getWork = (el) => {
       <div class="box__front">
         <img class="box__img" src="${el.imgPath}" alt="${el.name}">
         <div class="box__description">
-          <div class="box__text">${el.title}</div>
+          <div class="box__text">
+            <div class="box__caption">${el.title}</div>
+            <div class="box__help" title="Описание работы" data-info="help">
+              <i class="fas fa-info box__icon"></i>
+            </div>
+          </div>
         </div>
       </div>
       <div class="box__back">

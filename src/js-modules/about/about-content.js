@@ -28,7 +28,7 @@ const renderAbout = () => {
         <h1 class="about__title">Обо мне</h1>
         <div class="about__info about__info_inactive" data-elem="info">
           <i class="fas fa-arrow-circle-down about__arrow"></i>
-          <span class="about__text">Смотреть</span>
+          <span class="about__text">Показать...</span>
           <div class="about__desc">
             Тоже понравился лес <i class="fas fa-tree forest"></i> на заднем плане? По-моему красиво!
             А теперь к делу. В этом разделе нет ни километра букв, ни тонны <i class="fas fa-weight weights"></i> разных табличек.
