@@ -5,7 +5,18 @@ export let works = [
     name: 'Keyboard',
     imgPath: './img/keyboard.png',
     codeLink: 'https://github.com/HL-Dz/virtual-keyboard-app',
-    prodLink: 'https://virtual-keyboard-app1.netlify.app/'
+    prodLink: 'https://virtual-keyboard-app1.netlify.app/',
+    description: `
+    Виртуальная клавиатура поддерживает несколько языков.
+    Легко можно добавить нужный язык через данные JS.
+    Клавиатура совмещена с ToDoList. В нем отображается список задач.
+    Все задачи хранятся в localStorage.
+    `,
+    techs: [
+      './img/js.png',
+      './img/sass.png',
+      './img/webpack.png'
+    ]
   },
   {
     id: 2,
@@ -13,7 +24,13 @@ export let works = [
     name: 'Singolo',
     imgPath: './img/singolo.png',
     codeLink: 'https://github.com/HL-Dz/singolo',
-    prodLink: 'https://singolo-app.netlify.app/'
+    prodLink: 'https://singolo-app.netlify.app/',
+    description: ``,
+    techs: [
+      './img/js.png',
+      './img/sass.png',
+      './img/html.png',
+    ]
   },
   {
     id: 3,
@@ -21,7 +38,13 @@ export let works = [
     name: 'Burgers',
     imgPath: './img/burgers.png',
     codeLink: 'https://github.com/HL-Dz/burgers',
-    prodLink: 'https://new-burgers-app.netlify.app/'
+    prodLink: 'https://new-burgers-app.netlify.app/',
+    description: ``,
+    techs: [
+      './img/js.png',
+      './img/sass.png',
+      './img/html.png',
+    ]
   },
   {
     id: 4,
@@ -29,7 +52,13 @@ export let works = [
     name: 'Plane',
     imgPath: './img/plane.png',
     codeLink: 'https://github.com/HL-Dz/HL-Dz.github.io/tree/master/test',
-    prodLink: 'https://plane-app.netlify.app/'
+    prodLink: 'https://plane-app.netlify.app/',
+    description: ``,
+    techs: [
+      './img/js.png',
+      './img/sass.png',
+      './img/html.png',
+    ]
   },
   {
     id: 5,
@@ -37,6 +66,11 @@ export let works = [
     name: 'Social',
     imgPath: './img/social.png',
     codeLink: 'https://github.com/HL-Dz/HL-Dz.github.io/tree/master/work1',
-    prodLink: 'https://social-ui-1.netlify.app/'
+    prodLink: 'https://social-ui-1.netlify.app/',
+    description: ``,
+    techs: [
+      './img/sass.png',
+      './img/html.png',
+    ]
   },
 ]

@@ -1,10 +1,14 @@
 import './sass/main.scss';
 import Greeting from './js-modules/greeting.js';
 import technologies from './js-modules/data.js';
+import { works } from './js-modules/portfolio/portfolio-data.js';
+import modal from './js-modules/modal/modal.js';
+import getModalContent from './js-modules/portfolio/modal-content.js';
 import locationResolver from './js-modules/locationResolver.js';
 import Navigation from './js-modules/navigation.js';
 
 const app = document.querySelector('#app');
+
 
 
 // const greeting = new Greeting({
@@ -14,6 +18,7 @@ const app = document.querySelector('#app');
 // });
 
 const nav = new Navigation();
+
 
 window.addEventListener('load', () => {
   let location = window.location.hash;
@@ -35,7 +40,11 @@ app.addEventListener('click', (e) => {
   } else if (target.dataset.close === 'contact') {
     toggleContactLinks(target);
   } else if (target.closest('[data-info="help"]')) {
-    console.log('Click help');
+    const id = +target.closest('[data-info="help"]').dataset.id;
+    const work = works.find(w => w.id === id);
+    const content = getModalContent(work);
+    workModal.setContent(content);
+    workModal.open();
   }
 });
 
@@ -63,10 +72,20 @@ setInterval(() => {
 
 /********************************PORTFOLIO SECTION********************************/
 
-// Показать ссылки на одну из работ
+// Показать/скрыть ссылки на одну из работ
 const rotateWork = (elem) => {
   elem.classList.toggle('box_rotate');
 }
+
+// Модальное окно для работ
+const workModal = modal({
+  title: 'Описание работы',
+  footerButtons: [
+    {text: 'Закрыть', cls: 'btn-cancel', handler(){
+      workModal.close();
+    }}
+  ]
+});
 
 
 /********************************CONTACT SECTION********************************/

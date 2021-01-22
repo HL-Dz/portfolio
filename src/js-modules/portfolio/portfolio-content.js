@@ -9,7 +9,7 @@ const getWork = (el) => {
         <div class="box__description">
           <div class="box__text">
             <div class="box__caption">${el.title}</div>
-            <div class="box__help" title="Описание работы" data-info="help">
+            <div class="box__help" title="Описание работы" data-info="help" data-id="${el.id}">
               <i class="fas fa-info box__icon"></i>
             </div>
           </div>
