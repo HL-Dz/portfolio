@@ -82,15 +82,20 @@
 .about__text {
   position: absolute;
   color: rgba(219, 217, 217, 0.863);
+  color: rgb(228, 227, 227);
+  font-weight: bold;
   left: 50%;
   transform: translateX(-50%);
   font-size: 3rem;
   padding: 5px 40px;
-  border-radius: 5px;
+  // border-radius: 5px;
   opacity: 0;
   transition: opacity 1s ease;
-  background: #12131469;
-  box-shadow: 0 10px 35px rgba(194, 192, 192, 0.829) inset;
+  background: #12131425;
+  // box-shadow: 0 10px 35px rgba(194, 192, 192, 0.829) inset;
+  // background: linear-gradient(0deg, rgba(231, 241, 239, 0.5) 50%, rgba(241, 246, 244, 0.1) 10%);
+  border-top: 1px solid rgba(228, 226, 226, 0.548);
+  border-bottom: 1px solid rgba(228, 226, 226, 0.548);
 
   @include media-mobile {
     width: 100%;
