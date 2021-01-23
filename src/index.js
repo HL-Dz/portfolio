@@ -79,7 +79,7 @@ const rotateWork = (elem) => {
 
 // Модальное окно для работ
 const workModal = modal({
-  title: 'Описание работы',
+  title: 'Краткое описание',
   footerButtons: [
     {text: 'Закрыть', cls: 'btn-cancel', handler(){
       workModal.close();

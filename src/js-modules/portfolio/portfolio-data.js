@@ -25,10 +25,12 @@ export let works = [
     imgPath: './img/singolo.png',
     codeLink: 'https://github.com/HL-Dz/singolo',
     prodLink: 'https://singolo-app.netlify.app/',
-    description: ``,
+    description: `
+    Универсальный адаптивный ленгдинг. Имеется 5 разделов с определенной тематикой.
+    `,
     techs: [
       './img/js.png',
-      './img/sass.png',
+      './img/css.png',
       './img/html.png',
     ]
   },
@@ -39,21 +41,25 @@ export let works = [
     imgPath: './img/burgers.png',
     codeLink: 'https://github.com/HL-Dz/burgers',
     prodLink: 'https://new-burgers-app.netlify.app/',
-    description: ``,
+    description: `
+    Сайт для ресторана быстрого питания. 
+    Фиксированные размеры блоков. На мобильных устройствах отображаются
+    в масштабе 1.0.
+    `,
     techs: [
-      './img/js.png',
+      './img/jquery.png',
       './img/sass.png',
       './img/html.png',
     ]
   },
   {
     id: 4,
-    title: `Базовый шаблон`,
+    title: `Адаптивная верстка`,
     name: 'Plane',
     imgPath: './img/plane.png',
     codeLink: 'https://github.com/HL-Dz/HL-Dz.github.io/tree/master/test',
     prodLink: 'https://plane-app.netlify.app/',
-    description: ``,
+    description: `Адаптивная одностраничная верстка.`,
     techs: [
       './img/js.png',
       './img/sass.png',
@@ -62,12 +68,12 @@ export let works = [
   },
   {
     id: 5,
-    title: `Базовый шаблон`,
+    title: `Адаптивная верстка`,
     name: 'Social',
     imgPath: './img/social.png',
     codeLink: 'https://github.com/HL-Dz/HL-Dz.github.io/tree/master/work1',
     prodLink: 'https://social-ui-1.netlify.app/',
-    description: ``,
+    description: `Адаптивная одностраничная верстка.`,
     techs: [
       './img/sass.png',
       './img/html.png',

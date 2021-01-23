@@ -16,7 +16,7 @@ const getModalContent = (elem) => {
       </div>
       <div class="work__info">
         <div class="techs">
-          <div class="techs__caption">Технологии:</div>
+          <div class="techs__caption">Инструменты:</div>
           <div class="techs__list">${techsElems.join('')}</div>
         </div>
         <div class="work__text">${elem.description || 'Информация отсутствует...'}</div>
