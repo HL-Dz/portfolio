@@ -32,5 +32,5 @@
 }
 
 @mixin media-landscape {
-  @media screen and (orientation: landscape) {@content};
+  @media screen and (orientation: landscape) and (max-width: 600px) and (max-height: 480px) {@content};
 }
