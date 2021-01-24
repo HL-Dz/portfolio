@@ -44,6 +44,14 @@ const renderPortfolio = () => {
       <div class="portfolio__img"></div>
       <div class="container-block">
         <h1 class="portfolio__title">Портфолио</h1>
+        <div class="portfolio__note">
+          <p>
+            <i class="fas fa-comment-dots"></i>
+            Работы кликабельны. Чтобы получить краткую информацию о 
+            проекте нажмите в правом верхнем углу на <strong>i</strong>.
+            Чтобы посмотреть исходники или Production нажмите в любой другой области работы.
+          </p>
+        </div>
         <div class="portfolio-container">
           ${allWorks.join('')}
         </div>

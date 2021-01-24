@@ -27,6 +27,35 @@
   @extend %title-dir;
 }
 
+.portfolio__note {
+  max-width: 700px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.212);
+
+  @include media-tablet {
+    margin-top: 10px;
+  }
+
+  @include media-mobile {
+    margin-bottom: 0;
+  }
+  
+}
+
+.portfolio__note p {
+  color: rgb(216, 213, 213);
+  font-size: 1.9rem;
+  letter-spacing: 1px;
+  text-align: center;
+
+  @include media-mobile {
+    font-size: 1.7rem;
+  }
+}
+
 .portfolio-container {
   display: flex;
   flex-wrap: wrap;

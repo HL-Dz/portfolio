@@ -24,8 +24,13 @@ $grey: rgba(255, 255, 255, 0.438);
 
       @include media-tablet {
         transform: translateY(10px);
+        align-self: auto;
       }
     }
+  }
+
+  @include media-tablet {
+    align-items: center;
   }
 }
 

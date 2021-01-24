@@ -50,6 +50,7 @@ export let works = [
       './img/jquery.png',
       './img/sass.png',
       './img/html.png',
+      './img/webpack.png'
     ]
   },
   {
