@@ -21,6 +21,11 @@
     width: 100%;
     z-index: 3;
   }
+
+  @include media-landscape {
+    width: 100%; 
+    z-index: 3;
+  }
 }
 
 .burger {
@@ -62,6 +67,13 @@
       transform: translateX(-50%);
     }
   }
+
+  @include media-landscape {
+    &_close {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
 }
 
 .burger__item {
@@ -90,6 +102,10 @@
 
   @include media-mobile {
     margin-top: 80px;
+  }
+
+  @include media-landscape {
+   margin-top: 55px;
   }
 }
 
@@ -127,6 +143,10 @@
   @include media-mobile {
     justify-content: center;
     padding-right: 0;
+  }
+  
+  @include media-landscape  {
+   justify-content: center;
   }
 }
 

@@ -29,4 +29,8 @@
 
 @mixin media-mobile-landscape { // orientation: landscape
   @media screen and (orientation: landscape) and (min-width: $mobile-small-width) and (max-width: 700px) { @content };
-} 
+}
+
+@mixin media-landscape {
+  @media screen and (orientation: landscape) {@content};
+}

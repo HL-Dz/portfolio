@@ -48,6 +48,11 @@
     width: 95%;
     height: 80px;
   }
+
+  @include media-landscape {
+    width: 80%;
+    height: 60px;
+  }
 }
 
 .communication__block {
@@ -77,6 +82,11 @@
   }
 
   @include media-mobile {
+    font-size: 4rem;
+  }
+
+  @include media-landscape {
+    line-height: 60px;
     font-size: 4rem;
   }
 }
@@ -116,6 +126,11 @@
     font-size: 3.5rem;
     width: 70%;
   }
+
+  @include media-landscape {
+    line-height: 60px;
+    font-size: 3.5rem;
+  }
 }
 
 
@@ -130,6 +145,11 @@
     width: 80px;
     height: 80px;
   }
+
+  @include media-landscape {
+    width: 60px;
+    height: 60px;
+  }
 }
 
 .path__icon {
@@ -138,6 +158,10 @@
   transition: all 0.3s ease;
   &:hover {
     text-shadow: 0 0 20px #fff;
+  }
+
+  @include media-landscape {
+    font-size: 4rem;
   }
 }
 
@@ -156,6 +180,11 @@
   }
 
   @include media-mobile {
+    width: 60px;
+    height: 60px;
+  }
+
+  @include media-landscape {
     width: 60px;
     height: 60px;
   }

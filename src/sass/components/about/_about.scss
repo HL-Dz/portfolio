@@ -60,6 +60,11 @@
   @include media-tablet {
     flex-direction: column;
   }
+
+  @include media-landscape {
+    margin-bottom: 60px;
+    padding-top: 10px;
+  }
 }
 
 .about__arrow {
@@ -113,6 +118,12 @@
     order: -1;
     margin-bottom: 10px;
     border-radius: 50%;
+  }
+
+  @include media-landscape {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 0;
   }
 }
 
@@ -367,6 +378,10 @@
       display: none;
     }
   }
+
+  @include media-landscape {
+    margin-bottom: 25px; 
+  }
 }
 
 .skill {
@@ -418,6 +433,12 @@
     left: 90%;
     width: 60px;
     height: 60px;
+  }
+
+  @include media-landscape {
+   width: 40px;
+   height: 40px;
+   padding: 7px;
   }
 }
 

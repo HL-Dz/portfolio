@@ -26,6 +26,10 @@ $grey: rgba(255, 255, 255, 0.438);
         transform: translateY(10px);
         align-self: auto;
       }
+
+      @include media-landscape {
+        align-self: flex-start;
+      }
     }
   }
 

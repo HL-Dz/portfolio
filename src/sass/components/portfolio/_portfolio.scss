@@ -75,6 +75,10 @@
   @include media-mobile {
     flex-direction: column;
   }
+
+  @include media-landscape {
+    justify-content: space-evenly;
+  }
 }
 
 .box {
@@ -95,6 +99,10 @@
   @include media-mobile {
     width: 100%;
     margin-bottom: 25px;
+  }
+
+  @include media-landscape {
+    margin-bottom: 20px;
   }
 }
 

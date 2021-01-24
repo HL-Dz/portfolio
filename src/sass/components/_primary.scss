@@ -71,7 +71,16 @@
       background-size: cover;
       border-radius: 3px;
       box-shadow: 0 5px 10px rgb(214, 211, 211);
+
+      @include media-landscape {
+        width: 110px;
+        height: 110px;
+      }
     }
+  }
+
+  @include media-landscape {
+    margin-top: 115px;
   }
 }
 

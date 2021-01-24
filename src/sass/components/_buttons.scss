@@ -90,7 +90,6 @@
 }
 
 .btn-cancel {
-  // background: #000;
   position: relative;
   background: transparent;
   outline: none;
@@ -103,6 +102,10 @@
 
   &:hover {
     animation: close-btn 1.3s ease infinite;
+  }
+
+  @include media-landscape  {
+    padding: 0 30px;
   }
 }
 
