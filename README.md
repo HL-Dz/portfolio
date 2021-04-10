@@ -1,6 +1,6 @@
 # Portfolio
 
-[Deploy project](https://hl-dz-portfolio.netlify.app/#/ "Portfolio")
+## [Deploy project - https://hl-dz-portfolio.netlify.app/#/](https://hl-dz-portfolio.netlify.app/#/ "Portfolio")
 
 
 Technologies used: 
@@ -15,15 +15,24 @@ Technologies used:
 
 Portfolio site for my projects and information about me.
 
-There are 4 sections: Home, About me, Portfolio, Contacts.
+There are 4 sections: [Home](https://hl-dz-portfolio.netlify.app/# "Home"),
+[About me](https://hl-dz-portfolio.netlify.app/#/about/ "About me"),
+[Portfolio](https://hl-dz-portfolio.netlify.app/#/portfolio/ "Portfolio"), 
+[Contacts](https://hl-dz-portfolio.netlify.app/#/contact/ "Contacts").
 
-In the section "About me" there is a summary of my skills.
+In the section 
+"[About me](https://hl-dz-portfolio.netlify.app/#/about/ "About me")" 
+there is a summary of my skills.
 
-In the "Portfolio" section there is information about my projects and links to the code.
+In the 
+"[Portfolio](https://hl-dz-portfolio.netlify.app/#/portfolio/ "Portfolio")" 
+section there is information about my projects and links to the code.
 
-In the section "Contacts" information on how to contact me.
+In the section 
+"[Contacts](https://hl-dz-portfolio.netlify.app/#/contact/ "Contacts")" 
+information on how to contact me.
 
-![Head Screen](./src/img/screen.png "Main")
+[![image](./src/img/portfolio.gif)](https://hl-dz-portfolio.netlify.app/#/)
 
 ***
 ## Getting started:
