@@ -4,12 +4,11 @@
   position: relative;
 }
 
-
 .portfolio__img {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url('./img/portfolio-1.jpg');
+  background-image: url("./img/portfolio-1.jpg");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: contain;
@@ -21,7 +20,6 @@
     opacity: 0;
   }
 }
-
 
 .portfolio__title {
   @extend %title-dir;
@@ -42,7 +40,6 @@
   @include media-mobile {
     margin-bottom: 0;
   }
-  
 }
 
 .portfolio__note p {
@@ -63,7 +60,7 @@
   margin: 0 auto;
 
   &:after {
-    content: '';
+    content: "";
     display: block;
     width: calc((90% - 20px) / 2);
   }
@@ -89,7 +86,7 @@
   border-radius: 5px;
   overflow: hidden;
   cursor: pointer;
-  
+
   &_rotate {
     .box__inner {
       transform: rotateY(180deg);
@@ -257,7 +254,7 @@
   &_code {
     margin-bottom: 5px;
   }
-  
+
   @include media-tablet {
     font-size: 3rem;
   }
