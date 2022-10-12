@@ -4,7 +4,7 @@
   bottom: 0;
   left: 0;
   width: 200px;
-  background: transparent;
+  background: #b9b5b51a;
   transition: left 0.5s ease;
 
   @include media-tablet-middle {
@@ -23,7 +23,7 @@
   }
 
   @include media-landscape {
-    width: 100%; 
+    width: 100%;
     z-index: 3;
   }
 }
@@ -48,12 +48,12 @@
         transform: rotate(45deg);
         margin-top: 11px;
       }
-  
+
       .burger__item:nth-child(2) {
         transform: rotate(45deg);
         opacity: 0;
       }
-  
+
       .burger__item:last-child {
         transform: rotate(-45deg);
         margin-top: -17.5px;
@@ -105,7 +105,7 @@
   }
 
   @include media-landscape {
-   margin-top: 55px;
+    margin-top: 55px;
   }
 }
 
@@ -136,17 +136,17 @@
   border-radius: 0 3px 3px 0;
   @extend %transition;
 
-  &_active{
-    background: rgba(145, 140, 140, 0.10);
+  &_active {
+    background: rgba(145, 140, 140, 0.1);
   }
 
   @include media-mobile {
     justify-content: center;
     padding-right: 0;
   }
-  
-  @include media-landscape  {
-   justify-content: center;
+
+  @include media-landscape {
+    justify-content: center;
   }
 }
 

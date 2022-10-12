@@ -4,17 +4,22 @@ export let works = [
     title: `TFL - TOP FOOTBALL LEAGUES`,
     name: "TFL",
     imgPath: "./img/tfl.png",
-    codeLink: "https://github.com/HL-Dz/virtual-keyboard-app",
+    codeLink: "https://github.com/HL-Dz/FTL-app",
     prodLink: "https://tfl-app.netlify.app/",
     description: `
-    Приложение предназначено для всех пользователей, но больше для любителей футбола.
-    В приложении вы можете найти информацию о футбольных лигах, командах, игроках.
+    Приложение на спортивную (футбольную) тематику.
+    Информация о футбольных лигах, командах, игроках.
     Вы можете читать статьи, комментировать их.
     Статьи добавляются администраторами приложения.
     Приложение имеет ограничение на количество запросов к данным.
     Если лимит запроса превышен, в модальном окне будет отображено сообщение.
     `,
-    techs: ["./img/js.png", "./img/sass.png", "./img/webpack.png"],
+    techs: [
+      "./img/react.png",
+      "./img/redux.png",
+      "./img/firebase.png",
+      "./img/typescript.png",
+    ],
   },
   {
     id: 2,
