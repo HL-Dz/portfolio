@@ -1,6 +1,6 @@
 # Portfolio
 
-## [Deploy project - https://hl-dz-portfolio.netlify.app/#/](https://hl-dz-portfolio.netlify.app/#/ "Portfolio")
+## [Deploy project - https://hlushak-dzmitry.netlify.app/#/](https://hlushak-dzmitry.netlify.app/#/ "Portfolio")
 
 
 Technologies used: 
@@ -16,23 +16,23 @@ Technologies used:
 Portfolio site for my projects and information about me.
 
 There are 4 sections: [Home](https://hl-dz-portfolio.netlify.app/# "Home"),
-[About me](https://hl-dz-portfolio.netlify.app/#/about/ "About me"),
-[Portfolio](https://hl-dz-portfolio.netlify.app/#/portfolio/ "Portfolio"), 
-[Contacts](https://hl-dz-portfolio.netlify.app/#/contact/ "Contacts").
+[About me](https://hlushak-dzmitry.netlify.app/#/about/ "About me"),
+[Portfolio](https://hlushak-dzmitry.netlify.app/#/portfolio/ "Portfolio"), 
+[Contacts](https://hlushak-dzmitry.netlify.app/#/contact/ "Contacts").
 
 In the section 
-"[About me](https://hl-dz-portfolio.netlify.app/#/about/ "About me")" 
+"[About me](https://hlushak-dzmitry.netlify.app/#/about/ "About me")" 
 there is a summary of my skills.
 
 In the 
-"[Portfolio](https://hl-dz-portfolio.netlify.app/#/portfolio/ "Portfolio")" 
+"[Portfolio](https://hlushak-dzmitry.netlify.app/#/portfolio/ "Portfolio")" 
 section there is information about my projects and links to the code.
 
 In the section 
-"[Contacts](https://hl-dz-portfolio.netlify.app/#/contact/ "Contacts")" 
+"[Contacts](https://hlushak-dzmitry.netlify.app/#/contact/ "Contacts")" 
 information on how to contact me.
 
-[![image](./src/img/portfolio.gif)](https://hl-dz-portfolio.netlify.app/#/)
+[![image](./src/img/portfolio.gif)](https://hlushak-dzmitry.netlify.app/#/)
 
 ***
 ## Getting started:
