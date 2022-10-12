@@ -15,8 +15,8 @@ Technologies used:
 
 Portfolio site for my projects and information about me.
 
-There are 4 sections: [Home](https://hl-dz-portfolio.netlify.app/# "Home"),
-[About me](https://hlushak-dzmitry.netlify.app/#/about/ "About me"),
+There are 4 sections: [Home](https://hlushak-dzmitry.netlify.app/# "Home"),
+[Skills](https://hlushak-dzmitry.netlify.app/#/skills/ "About me"),
 [Portfolio](https://hlushak-dzmitry.netlify.app/#/portfolio/ "Portfolio"), 
 [Contacts](https://hlushak-dzmitry.netlify.app/#/contact/ "Contacts").
 
