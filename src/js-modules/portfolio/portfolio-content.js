@@ -1,4 +1,4 @@
-import { works } from './portfolio-data.js';
+import { works } from "./portfolio-data.js";
 
 const getWork = (el) => {
   return `
@@ -10,7 +10,7 @@ const getWork = (el) => {
           <div class="box__text">
             <div class="box__caption">${el.title}</div>
             <div class="box__help" title="Описание работы" data-info="help" data-id="${el.id}">
-              <i class="fas fa-info box__icon"></i>
+              <div class="box__tip">Info</div>
             </div>
           </div>
         </div>
@@ -22,22 +22,23 @@ const getWork = (el) => {
         <div class="source">
           <a class="source__link source__link_code" href="${el.codeLink}" data-type="link" target="_blank" title="Исходники">
             <i class="fas fa-file-code source-code"></i>
+            <span class="source__text"> Исходники</span>
           </a>
           <a class="source__link source__link_watch" href="${el.prodLink}" data-type="link" target="_blank" title="Production">
             <i class="fas fa-eye source-watch"></i>
+            <span class="source__text">Deploy</span>
           </a>
         </div>
       </div>
     </div>
   </div>
-  `
-}
+  `;
+};
 
 const renderPortfolio = () => {
-  const allWorks = works.map(elem => {
+  const allWorks = works.map((elem) => {
     return getWork(elem);
-  })
-
+  });
 
   return `
     <section class="portfolio">
@@ -53,12 +54,11 @@ const renderPortfolio = () => {
           </p>
         </div>
         <div class="portfolio-container">
-          ${allWorks.join('')}
+          ${allWorks.join("")}
         </div>
       </div>
     </section>
-  `
+  `;
 };
-
 
 export default renderPortfolio;
