@@ -74,7 +74,7 @@ export let works = [
     imgPath: "./img/plane.png",
     codeLink: "https://github.com/HL-Dz/HL-Dz.github.io/tree/master/test",
     prodLink: "https://plane-app.netlify.app/",
-    description: `Адаптивная одностраничная верстка.`,
+    description: `Адаптивный лендинг`,
     techs: ["./img/js.png", "./img/sass.png", "./img/html.png"],
   },
   {
@@ -86,5 +86,15 @@ export let works = [
     prodLink: "https://social-ui-1.netlify.app/",
     description: `Адаптивная одностраничная верстка.`,
     techs: ["./img/sass.png", "./img/html.png"],
+  },
+  {
+    id: 7,
+    title: `Адаптивная верстка`,
+    name: "Proindustry",
+    imgPath: "./img/pro.png",
+    codeLink: "https://github.com/HL-Dz/proindustry",
+    prodLink: "https://proindustry.netlify.app/",
+    description: `Адаптивный лендинг`,
+    techs: ["./img/css.png", "./img/html.png"],
   },
 ];
