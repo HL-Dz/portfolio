@@ -80,11 +80,11 @@ export default class Navigation {
         link.classList.remove("nav__link_active");
       });
       target.classList.add("nav__link_active");
-      setTimeout(() => {
-        locationResolver(this.$app, this.currentHref);
-        this.$app.classList.remove("app_inactive");
-        pageLoader.remove();
-      }, 3300);
+      // setTimeout(() => {
+      locationResolver(this.$app, this.currentHref);
+      this.$app.classList.remove("app_inactive");
+      pageLoader.remove();
+      // }, 700);
     }
   }
 
